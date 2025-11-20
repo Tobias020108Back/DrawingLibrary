@@ -10,8 +10,8 @@ local DrawingLibrary = {};
 local DrawingLibraryPrivate = {};
 local screenGUIs = {};
 
-local Maid = loadstring(game:HttpGet('https://raw.githubusercontent.com/Aztup/Aztup-Hub-V3-Utils/main/Maid.lua'))()
-local Signal = loadstring(game:HttpGet('https://raw.githubusercontent.com/Aztup/Aztup-Hub-V3-Utils/main/Signal.lua'))()
+local Maid = loadstring(game:HttpGet('https://raw.githubusercontent.com/ModerkaScripts/Aztup-Hub-V3/refs/heads/master/files/utils/Maid.lua'))()
+local Signal = loadstring(game:HttpGet('https://raw.githubusercontent.com/ModerkaScripts/Aztup-Hub-V3/refs/heads/master/files/utils/Signal.lua'))()
 
 DrawingLibrary.DrawingLibrary = true;
 
@@ -670,5 +670,6 @@ do -- // DrawingLibrary
     UserInputService.InputChanged:Connect(function(...) handleInputEvent('InputChanged', ...) end);
     UserInputService.InputEnded:Connect(function(...) handleInputEvent('InputEnded', ...) end);
 end;
+
 
 return DrawingLibrary;
